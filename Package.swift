@@ -8,7 +8,7 @@
 /// you may not use this file except in compliance with the License.
 /// You may obtain a copy of the License at
 ///
-/// 1) .LICENSE
+/// 1) LICENSE file
 /// 2) https://apache.org/licenses/LICENSE-2.0
 ///
 /// Unless required by applicable law or agreed to in writing, software
@@ -23,7 +23,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Wand",
+    name: "Wand_CoreGraphics",
     defaultLocalization: "ru",
 
     platforms: [
@@ -34,18 +34,19 @@ let package = Package(
     ],
 
     products: [
-        .library(name: "Wand", targets: ["Wand"])
+        .library(name: "Wand_CoreGraphics", targets: ["WandCoreGraphics"])
     ],
 
     dependencies: [
+        .package(url: "https://github.com/el-machine/Wand.git", from: "1.1.7"),
         .package(url: "https://github.com/el-machine/Any.git", from: "1.0.0")
     ],
 
     targets: [
-        .target(name: "Wand"),
+        .target(name: "WandCoreGraphics", dependencies: ["Wand"]),
         .testTarget(name: "wandTests", dependencies:
                         [
-                            "Wand",
+                            "WandCoreGraphics",
                             .product(name: "Any_", package: "Any")
                         ]
                    )
