@@ -25,22 +25,22 @@ import Wand
 @inline(__always)
 postfix
 public
-func |(c: CGFloat) -> CGSize {
-    CGSize(width: c, height: c)
+func |(dimension: CGFloat) -> CGSize {
+    CGSize(width: dimension, height: dimension)
 }
 
 @inline(__always)
 postfix
 public
-func |(c: (width: CGFloat, height: CGFloat)) -> CGSize {
-    CGSize(width: c.0, height: c.1)
+func |(size: (width: CGFloat, height: CGFloat)) -> CGSize {
+    CGSize(width: size.width, height: size.height)
 }
 
 @inline(__always)
 postfix
 public
-func |(c: (width: Int, height: Int)) -> CGSize {
-    CGSize(width: CGFloat(c.width), height:  CGFloat(c.height))
+func |(size: (width: Int, height: Int)) -> CGSize {
+    CGSize(width: CGFloat(size.width), height: CGFloat(size.height))
 }
 
 #endif

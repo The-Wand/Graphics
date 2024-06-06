@@ -25,8 +25,8 @@ import Wand
 @inline(__always)
 postfix
 public
-func |(c: (x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)) -> CGRect {
-    CGRect(x: c.x, y: c.y, width: c.width, height: c.height)
+func |(rect: (x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)) -> CGRect {
+    CGRect(x: rect.x, y: rect.y, width: rect.width, height: rect.height)
 }
 
 @inline(__always)

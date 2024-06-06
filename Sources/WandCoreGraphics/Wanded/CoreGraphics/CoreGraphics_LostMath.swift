@@ -16,8 +16,11 @@
 /// limitations under the License.
 ///
 
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 func + (left: CGSize, right: CGSize) -> CGSize {
     ((left.width + right.width), (left.height + right.height))|
 }
+
+#endif

@@ -25,8 +25,8 @@ import Wand
 @inline(__always)
 postfix
 public
-func |(p: (x: CGFloat, y: CGFloat)) -> CGPoint {
-    CGPoint(x: p.0, y: p.1)
+func |(point: (x: CGFloat, y: CGFloat)) -> CGPoint {
+    CGPoint(x: point.0, y: point.1)
 }
 
 @inline(__always)

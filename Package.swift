@@ -38,7 +38,7 @@ let package = Package(
     ],
 
     dependencies: [
-        .package(url: "https://github.com/el-machine/Wand.git", from: "1.1.7"),
+        .package(url: "https://github.com/el-machine/Wand.git", from: "1.3.5"),
         .package(url: "https://github.com/el-machine/Any.git", from: "1.0.0")
     ],
 

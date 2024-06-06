@@ -4,15 +4,9 @@
 ### Usage
 ```bash
 
-#Ask Data
-"https://api.github.com/gists" | { (data: Data) in
+#Convert
 
-}
-
-#Wait for Notification
-UIApplication.didBecomeActiveNotification | { (n: Notification) in
-
-}
+let size = (width: 50, height: 100)|
 
 ```
 ### Idea
