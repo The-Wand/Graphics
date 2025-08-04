@@ -1,14 +1,6 @@
 {
+  "originHash" : "0916ff51ebcd0fb4822fdf7fe2d4937d14825ab93cb5b95fbea774054f4823e0",
   "pins" : [
-    {
-      "identity" : "any",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/el-machine/Any.git",
-      "state" : {
-        "revision" : "6e6440aaf6a2a1b183aa22d85e29a2058bd73b42",
-        "version" : "1.0.0"
-      }
-    },
     {
       "identity" : "wand",
       "kind" : "remoteSourceControl",
@@ -19,5 +11,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
