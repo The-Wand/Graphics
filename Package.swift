@@ -23,7 +23,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Wand_CoreGraphics",
+    name: "WandGraphics",
     defaultLocalization: "ru",
 
     platforms: [
@@ -34,7 +34,7 @@ let package = Package(
     ],
 
     products: [
-        .library(name: "Wand_CoreGraphics", targets: ["WandCoreGraphics"])
+        .library(name: "WandGraphics", targets: ["WandGraphics"])
     ],
 
     dependencies: [
@@ -43,10 +43,10 @@ let package = Package(
     ],
 
     targets: [
-        .target(name: "WandCoreGraphics", dependencies: ["Wand"]),
+        .target(name: "WandGraphics", dependencies: ["Wand"]),
         .testTarget(name: "wandTests", dependencies:
                         [
-                            "WandCoreGraphics",
+                            "WandGraphics",
                             .product(name: "Any_", package: "Any")
                         ]
                    )
